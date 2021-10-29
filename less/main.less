@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #008277;
+}
+
+.banner {
+  font-family: "Open Sans", sans-serif;
+
+  &--slide {
+    position: relative;
+  }
+
+  &--image {
+    width: 100%;
+
+    source {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &--content {
+    position: absolute;
+    bottom: 8%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 35px 4%;
+    text-align: center;
+    margin: 0 4%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--paragraph {
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &--link {
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+    background-color: #003649;
+    color: white;
+    align-self: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+
+    &:hover {
+      background-color: #001922;
+    }
+  }
+
+  @media screen and (min-width: 481px) {
+    &--content {
+      margin: 0 4%;
+      padding: 20px 4%;
+    }
+  }
+
+  @media screen and (min-width: 630px) {
+    &--paragraph {
+      font-size: 24px;
+    }
+
+    &--link {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    &--content {
+      margin: 0 4%;
+      width: 52%;
+      padding: 25px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    &--link {
+      align-self: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    &--content {
+      left: 4.5%;
+      width: 35%;
+      padding: 30px 2.3%;
+    }
+
+    &--paragraph {
+      font-size: 20px;
+    }
+
+    &--link {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1900px) {
+    &--paragraph {
+      font-size: 30px;
+    }
+  }
+}

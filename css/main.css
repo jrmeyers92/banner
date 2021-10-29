@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v27/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1y4n.ttf) format('truetype');
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+.swiper-pagination-bullet-active {
+  background: #008277;
+}
+.banner {
+  font-family: "Open Sans", sans-serif;
+}
+.banner--slide {
+  position: relative;
+}
+.banner--image {
+  width: 100%;
+}
+.banner--image source {
+  width: 100%;
+}
+.banner--image img {
+  width: 100%;
+}
+.banner--content {
+  position: absolute;
+  bottom: 8%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 35px 4%;
+  text-align: center;
+  margin: 0 4%;
+  display: flex;
+  flex-direction: column;
+}
+.banner--paragraph {
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.banner--link {
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  background-color: #003649;
+  color: white;
+  align-self: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+}
+.banner--link:hover {
+  background-color: #001922;
+}
+@media screen and (min-width: 481px) {
+  .banner--content {
+    margin: 0 4%;
+    padding: 20px 4%;
+  }
+}
+@media screen and (min-width: 630px) {
+  .banner--paragraph {
+    font-size: 24px;
+  }
+  .banner--link {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .banner--content {
+    margin: 0 4%;
+    width: 52%;
+    padding: 25px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  .banner--link {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .banner--content {
+    left: 4.5%;
+    width: 35%;
+    padding: 30px 2.3%;
+  }
+  .banner--paragraph {
+    font-size: 20px;
+  }
+  .banner--link {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .banner--paragraph {
+    font-size: 30px;
+  }
+}
