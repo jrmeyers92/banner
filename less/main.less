@@ -5,39 +5,22 @@ body {
   padding: 0;
 }
 
-.swiper-pagination-bullet {
-  height: 12px;
-  width: 12px;
-}
-
-.swiper-pagination-bullet-active {
-  background: #008277;
-}
-
-.banner {
+.banner__home {
   font-family: "Open Sans", sans-serif;
 
-  &--slide {
+  .banner--slide {
     position: relative;
   }
 
-  &--image {
+  img {
     width: 100%;
-
-    source {
-      width: 100%;
-    }
-
-    img {
-      width: 100%;
-    }
   }
 
-  &--content {
+  .banner--contentContainer {
     position: absolute;
     bottom: 8%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 35px 4%;
     text-align: center;
     margin: 0 4%;
@@ -45,7 +28,7 @@ body {
     flex-direction: column;
   }
 
-  &--paragraph {
+  p {
     text-align: left;
     line-height: 1.5;
     font-weight: 500;
@@ -54,7 +37,7 @@ body {
     font-weight: 600;
   }
 
-  &--link {
+  a {
     padding: 10px 20px;
     border: 0;
     outline: none;
@@ -72,56 +55,69 @@ body {
     }
   }
 
+  .banner--pagination > * {
+    height: 12px;
+    width: 12px;
+  }
+
+  .banner--pagination > .swiper-pagination-bullet-active {
+    background: #008277;
+  }
+
   @media screen and (min-width: 481px) {
-    &--content {
+    .banner--contentContainer {
       margin: 0 4%;
       padding: 20px 4%;
     }
   }
 
   @media screen and (min-width: 630px) {
-    &--paragraph {
+    p {
       font-size: 24px;
     }
 
-    &--link {
+    a {
       font-size: 28px;
     }
   }
 
   @media screen and (min-width: 769px) {
-    &--content {
+    .banner--contentContainer {
       margin: 0 4%;
-      width: 52%;
+      max-width: 52%;
       padding: 25px;
       bottom: 50%;
       transform: translateY(50%);
     }
 
-    &--link {
+    a {
       align-self: flex-start;
     }
   }
 
   @media screen and (min-width: 1025px) {
-    &--content {
+    .banner--contentContainer {
       left: 4.5%;
-      width: 35%;
+      max-width: 35%;
       padding: 30px 2.3%;
     }
 
-    &--paragraph {
-      font-size: 20px;
+    p {
+      font-size: 22px;
     }
 
-    &--link {
+    a {
       font-size: 24px;
     }
   }
 
   @media screen and (min-width: 1900px) {
-    &--paragraph {
+    p {
       font-size: 30px;
+    }
+
+    a {
+      font-size: 28px;
     }
   }
 }

@@ -18,40 +18,27 @@ body {
   margin: 0;
   padding: 0;
 }
-.swiper-pagination-bullet {
-  height: 12px;
-  width: 12px;
-}
-.swiper-pagination-bullet-active {
-  background: #008277;
-}
-.banner {
+.banner__home {
   font-family: "Open Sans", sans-serif;
 }
-.banner--slide {
+.banner__home .banner--slide {
   position: relative;
 }
-.banner--image {
+.banner__home img {
   width: 100%;
 }
-.banner--image source {
-  width: 100%;
-}
-.banner--image img {
-  width: 100%;
-}
-.banner--content {
+.banner__home .banner--contentContainer {
   position: absolute;
   bottom: 8%;
   color: white;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 35px 4%;
   text-align: center;
   margin: 0 4%;
   display: flex;
   flex-direction: column;
 }
-.banner--paragraph {
+.banner__home p {
   text-align: left;
   line-height: 1.5;
   font-weight: 500;
@@ -59,7 +46,7 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
-.banner--link {
+.banner__home a {
   padding: 10px 20px;
   border: 0;
   outline: none;
@@ -72,50 +59,60 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
-.banner--link:hover {
+.banner__home a:hover {
   background-color: #001922;
 }
+.banner__home .banner--pagination > * {
+  height: 12px;
+  width: 12px;
+}
+.banner__home .banner--pagination > .swiper-pagination-bullet-active {
+  background: #008277;
+}
 @media screen and (min-width: 481px) {
-  .banner--content {
+  .banner__home .banner--contentContainer {
     margin: 0 4%;
     padding: 20px 4%;
   }
 }
 @media screen and (min-width: 630px) {
-  .banner--paragraph {
+  .banner__home p {
     font-size: 24px;
   }
-  .banner--link {
+  .banner__home a {
     font-size: 28px;
   }
 }
 @media screen and (min-width: 769px) {
-  .banner--content {
+  .banner__home .banner--contentContainer {
     margin: 0 4%;
-    width: 52%;
+    max-width: 52%;
     padding: 25px;
     bottom: 50%;
     transform: translateY(50%);
   }
-  .banner--link {
+  .banner__home a {
     align-self: flex-start;
   }
 }
 @media screen and (min-width: 1025px) {
-  .banner--content {
+  .banner__home .banner--contentContainer {
     left: 4.5%;
-    width: 35%;
+    max-width: 35%;
     padding: 30px 2.3%;
   }
-  .banner--paragraph {
-    font-size: 20px;
+  .banner__home p {
+    font-size: 22px;
   }
-  .banner--link {
+  .banner__home a {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 1900px) {
-  .banner--paragraph {
+  .banner__home p {
     font-size: 30px;
+  }
+  .banner__home a {
+    font-size: 28px;
   }
 }
